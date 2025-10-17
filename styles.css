@@ -3,7 +3,10 @@
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
+}
+
+body {
+    background-color: aliceblue;
 }
 
 div, ul {
@@ -14,25 +17,18 @@ h1 {
     background-color: gainsboro;
     padding: 10px;
     margin: 10px;
+    text-align: center;
 }
 
-ul {
-    margin-left: 20px;
-}
-
-ul > li {
-    background-color: paleturquoise;
+ul li {
+    /* background-color: paleturquoise; */
     color: red;
-    list-style-type: lower-roman;
+    list-style-type: square;
 }
 
 li a {
     color: red;
     text-decoration: underline;
-}
-
-.ingredients-list {
-    margin: 10px auto;
 }
 
 .nav-button {
@@ -46,5 +42,21 @@ li a {
 
 img {
     border: 1px solid salmon;
-    margin: 20px;
+}
+
+ol li {
+    border-bottom: 2px solid gray;
+    margin-bottom: 20px;
+}
+
+article { /*Could also use a class*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+article > * {
+    margin-bottom: 10px;
 }
